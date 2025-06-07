@@ -14,12 +14,15 @@ RUN npm install
 COPY . .
 # Accept build args
 ARG MONGO_URI
-
+ARG PORT
 
 # Set them as env inside the container
 ENV MONGO_URI=$MONGO_URI
+ENV PORT=$PORT
+
+EXPOSE $PORT
 # Expose the app port (change if not 3000)
-EXPOSE 80
+
 
 # Start the application
 CMD [ "node", "index.js" ]
