@@ -27,3 +27,5 @@ jobs:
           context: .
           push: true
           tags: feza12/01-backend:latest
+          build-args: |
+            MONGO_URI=${{ secrets.MONGO_URI }}
