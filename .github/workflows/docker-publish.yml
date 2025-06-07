@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: navaxis/01-backend:latest
+          tags: feza12/01-backend:latest
